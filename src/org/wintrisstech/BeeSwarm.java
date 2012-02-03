@@ -47,7 +47,7 @@ public class BeeSwarm extends JComponent implements ActionListener
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setVisible(true);
 
-        Timer t = new Timer(100, game);
+        Timer t = new Timer(30, game);
         t.start();
     }
 
@@ -98,7 +98,7 @@ public class BeeSwarm extends JComponent implements ActionListener
     {
         // Increment the counter used to calculate cr and ci.  The faster
         // we increment this, the faster the queen will move.
-        counter += 3;
+        counter += 2;
 
         // This is code taken from the Julia screensaver which calculates the 
         // position of a point that wanders around the screen.
